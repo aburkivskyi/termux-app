@@ -762,11 +762,11 @@ public class TermuxTerminalViewClient extends TermuxTerminalViewClientBase {
 
                 reportString.append("\n\n").append(AndroidUtils.getDeviceInfoMarkdownString(mActivity, true));
 
-                if (TermuxBootstrap.isAppPackageManagerAPT()) {
-                    String termuxAptInfo = TermuxUtils.geAPTInfoMarkdownString(mActivity);
-                    if (termuxAptInfo != null)
-                        reportString.append("\n\n").append(termuxAptInfo);
-                }
+                // if (TermuxBootstrap.isAppPackageManagerAPT()) {
+                    // String termuxAptInfo = TermuxUtils.geAPTInfoMarkdownString(mActivity);
+                    // if (termuxAptInfo != null)
+                        // reportString.append("\n\n").append(termuxAptInfo);
+                // }
 
                 if (addTermuxDebugInfo) {
                     String termuxDebugInfo = TermuxUtils.getTermuxDebugMarkdownString(mActivity);

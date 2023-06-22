@@ -3,6 +3,7 @@ apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion project.properties.compileSdkVersion.toInteger()
+    buildToolsVersion project.properties.buildToolsVersion.toString()
 
     dependencies {
         implementation "androidx.annotation:annotation:1.3.0"
